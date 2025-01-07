@@ -14,19 +14,26 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="header">
-      <nav class="pt-5 pb-5 pr-[18px] flex justify-end">
-        <img src="./images/menu.svg" alt="menu" class="md:hidden" />
+    <header class="header flex justify-end">
+      <nav
+        class="absolute flex justify-center items-center pt-5 pb-5 pr-[18px] flex-col gap-4"
+      >
+        <!-- <img src="./images/menu.svg" alt="menu" class="md:hidden burger__svg pt-5 pb-5 pr-[18px]" /> -->
+        <button id="burgerBtn" class="pr-[75px] md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
         <ul
-          class="hidden md:flex gap-[33px] text-[20px] font-[500] leading-[1.46]"
+          id="menu"
+          class="md:bg-white bg-slate-400 rounded-[15px] transition p-4 flex-col md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
         >
-          <li><a href="">Works</a></li>
-          <li><a href="" class="text-[#FF6464]">Blog</a></li>
+          <li><a href="./work.html" class="text-[#FF6464]">Works</a></li>
+          <li><a href="./blog.html">Blog</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!-- header end -->
+
 
     <section
       class="md:pl-[148px] md:pr-[148px] w-[100%] px-[10px] pb-[38px] md:pb-[32px] flex flex-col items-center justify-center"
@@ -143,5 +150,6 @@
       </p>
     </footer>
     <!-- footer end -->
+    <script src="script.js"></script>
   </body>
 </html>
