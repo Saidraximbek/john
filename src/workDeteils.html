@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./burger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,11 +15,17 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="header">
-      <nav class="pt-5 pb-5 pr-[18px] flex justify-end">
-        <img src="../images/menu.svg" alt="menu" class="md:hidden" />
+    <header class="header flex justify-end">
+      <nav
+        class="absolute flex justify-center items-center pt-5 pb-5 pr-[18px] flex-col gap-4"
+      >
+        <!-- <img src="./images/menu.svg" alt="menu" class="md:hidden burger__svg pt-5 pb-5 pr-[18px]" /> -->
+        <button id="burgerBtn" class="pr-[75px] md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
         <ul
-          class="hidden md:flex gap-[33px] text-[20px] font-[500] leading-[1.46]"
+          id="menu"
+          class="md:bg-white bg-slate-400 rounded-[15px] transition p-4 flex-col md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
         >
           <li><a href="./work.html" class="text-[#FF6464]">Works</a></li>
           <li><a href="./blog.html">Blog</a></li>
@@ -47,7 +54,7 @@
           >
             <img
               class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[681px] md:w-[100%]"
-              src="../images/Rectangle 4.png"
+              src="./images/Rectangle 4.png"
               alt=""
             />
             <div class="md:max-w-[681px] md:w-[100%]">
@@ -72,12 +79,12 @@
           >
             <img
               class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[681px] md:w-[100%]"
-              src="../images/Rectangle 6.png"
+              src="./images/Rectangle 6.png"
               alt=""
             />
             <img
               class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[681px] md:w-[100%]"
-              src="../images/Rectangle 5.png"
+              src="./images/Rectangle 5.png"
               alt=""
             />
 
@@ -104,15 +111,16 @@
       class="footer md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center gap-[26px]"
     >
       <div class="flex items-center gap-[35px]">
-        <img src="../images/fb.png" alt="" />
-        <img src="../images/insta.png" alt="" />
-        <img src="../images/Group.png" alt="" />
-        <img src="../images/Linkedin.png" alt="" />
+        <img src="./images/fb.png" alt="" />
+        <img src="./images/insta.png" alt="" />
+        <img src="./images/Group.png" alt="" />
+        <img src="./images/Linkedin.png" alt="" />
       </div>
       <p class="text-[14px] leading-[1.46]">
         Copyright ©2020 All rights reserved
       </p>
     </footer>
     <!-- footer end -->
+    <script src="script.js"></script>
   </body>
 </html>
