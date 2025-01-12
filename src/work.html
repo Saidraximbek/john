@@ -15,20 +15,19 @@
   <body>
     <!-- header start -->
     <header class="header flex justify-end">
-      <nav
-        class="absolute flex justify-center items-center pt-5 pb-5 pr-[18px] flex-col gap-4"
-      >
+      <nav class="flex justify-center items-center pt-5">
         <!-- <img src="./images/menu.svg" alt="menu" class="md:hidden burger__svg pt-5 pb-5 pr-[18px]" /> -->
-        <button id="burgerBtn" class="pr-[75px] md:hidden">
+        <button id="burgerBtn" class="pr-[18px] md:hidden">
           <img src="./images/menu.svg" alt="" />
         </button>
         <ul
           id="menu"
-          class="md:bg-white bg-slate-400 rounded-[15px] transition p-4 flex-col md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
+          class="md:bg-white bg-[#bdbcbc] absolute top-[45px] right-4 pt-5 pb-5 pr-[18px] flex-col rounded-[15px] transition p-4 md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
         >
           <li><a href="./work.html" class="text-[#FF6464]">Works</a></li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="">Contact</a></li>
+          <a href="./index.html">Home</a>
         </ul>
       </nav>
     </header>
@@ -36,19 +35,26 @@
 
     <!-- header end -->
 
-    <main>
+    <!-- main start -->
+    <main
+      class="main text-[#21243D] flex flex-col items-center justify-center md:pl-[20px] md:pr-[20px] pl-[10px] pr-[10px] md:w-[100%]"
+    >
+     
+
+     
+      
+
       <!-- featured section start -->
       <section
-        class="md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center"
+        class="md:ml-[148px] md:mr-[148px] md:mt-[90px] max-w-[375px] w-[100%] md:max-w-[856px] md:w-[100%] pt-[24px] pl-[10px] pr-[10px] pb-[59px] flex flex-col justify-end items-end"
       >
         <div
-          class="flex flex-col justify-center items-center md:justify-start md:items-start"
+          class="flex flex-col justify-start items-start md:justify-start md:items-start"
         >
-          <h2
-            class="font-[700] text-[44px] leading-[1.36] mb-[55px] mt-[106px]"
-          >
+          <h2 class="leading-[2] text-[30px] font-[700] md:mb-[13px] text-left md:text-[44px] md:font-[900]">
             Work
           </h2>
+
           <div
             class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px]"
           >
@@ -58,13 +64,38 @@
               alt=""
             />
             <div class="md:max-w-[594px] md:w-[100%]">
-              <a
-                href="./workDeteils.html"
-                class="font-[700] leading-[1.25] text-[24px] mb-[10px] pb-[16px]"
-              >
+              <a href="./workDeteils.html" class="font-[700] leading-[1.25] text-[24px] mb-4 inline-block">
                 Designing Dashboards
               </a>
-              <div class="flex items-center gap-[22px] mb-[25px] mt-4">
+              <div class="flex items-center gap-[22px] mb-[25px]">
+                <p
+                  class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
+                >
+                  2020
+                </p>
+                <p class="text-[#8695A4]">Dashboard</p>
+              </div>
+              <p class="leading-[1.46] pb-[17px] w-[100%]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mb-[31px] md:hidden md:items-center gap-[18px] border-b-[1px]"
+          >
+            <img
+              class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]"
+              src="./images/Rectangle 30 copy.png"
+              alt=""
+            />
+            <div class="md:max-w-[594px] md:w-[100%]">
+              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
+                Designing Dashboards
+              </h3>
+              <div class="flex items-center gap-[22px] mb-[25px]">
                 <p
                   class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
                 >
@@ -89,15 +120,15 @@
             />
             <div class="md:max-w-[594px] md:w-[100%]">
               <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
-                Vibrant Portraits of 2020
+                Designing Dashboards
               </h3>
               <div class="flex items-center gap-[22px] mb-[25px]">
                 <p
                   class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
                 >
-                  2018
+                  2020
                 </p>
-                <p class="text-[#8695A4]">Illustration</p>
+                <p class="text-[#8695A4]">Dashboard</p>
               </div>
               <p class="leading-[1.46] pb-[17px] w-[100%]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -106,7 +137,6 @@
               </p>
             </div>
           </div>
-
           <div
             class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px] hidden"
           >
@@ -117,15 +147,15 @@
             />
             <div class="md:max-w-[594px] md:w-[100%]">
               <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
-                36 Days of Malayalam type
+                Designing Dashboards
               </h3>
               <div class="flex items-center gap-[22px] mb-[25px]">
                 <p
                   class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
                 >
-                  2018
+                  2020
                 </p>
-                <p class="text-[#8695A4]">Typography</p>
+                <p class="text-[#8695A4]">Dashboard</p>
               </div>
               <p class="leading-[1.46] pb-[17px] w-[100%]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -134,6 +164,8 @@
               </p>
             </div>
           </div>
+        </div>
+
           <div
             class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px] hidden"
           >
@@ -150,41 +182,12 @@
                 <p
                   class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
                 >
-                  2018
-                </p>
-                <p class="text-[#8695A4]">Components, Design</p>
-              </div>
-              <p class="leading-[1.46] pb-[17px] w-[100%]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-          <div
-            class="mb-[31px] md:items-center gap-[18px] border-b-[1px] md:hidden"
-          >
-            <img
-              class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]"
-              src="./images/Rectangle 30 copy.png"
-              alt=""
-            />
-            <div class="md:max-w-[594px] md:w-[100%]">
-              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
-                Designing Landing pages
-              </h3>
-              <div class="flex items-center gap-[22px] mb-[25px]">
-                <p
-                  class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
-                >
                   2020
                 </p>
-                <p class="text-[#8695A4]">Website</p>
+                <p class="text-[#8695A4]">Dashboard</p>
               </div>
               <p class="leading-[1.46] pb-[17px] w-[100%]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
           </div>
@@ -192,10 +195,11 @@
       </section>
       <!-- featured section end -->
     </main>
+    <!-- main end -->
 
     <!-- footer start -->
     <footer
-      class="footer mt-[150px] md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center gap-[26px]"
+      class="footer mt-[51px] md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center gap-[26px]"
     >
       <div class="flex items-center gap-[35px]">
         <img src="./images/fb.png" alt="" />

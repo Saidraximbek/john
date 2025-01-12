@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./burger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,32 +14,32 @@
     <title>John</title>
   </head>
   <body class="font-['Heebo']">
-   <!-- header start -->
-   <header class="header flex justify-end">
-    <nav
-      class="absolute flex justify-center items-center pt-5 pb-5 pr-[18px] flex-col gap-4"
-    >
-      <!-- <img src="./images/menu.svg" alt="menu" class="md:hidden burger__svg pt-5 pb-5 pr-[18px]" /> -->
-      <button id="burgerBtn" class="pr-[75px] md:hidden">
-        <img src="./images/menu.svg" alt="" />
-      </button>
-      <ul
-        id="menu"
-        class="md:bg-white bg-slate-400 rounded-[15px] transition p-4 flex-col md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
-      >
-        <li><a href="./work.html">Works</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- header end -->
-
+    <!-- header start -->
+    <header class="header flex justify-end">
+      <nav class="flex justify-center items-center pt-5">
+        <!-- <img src="./images/menu.svg" alt="menu" class="md:hidden burger__svg pt-5 pb-5 pr-[18px]" /> -->
+        <button id="burgerBtn" class="pr-[18px] md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <ul
+          id="menu"
+          class="md:bg-white bg-[#bdbcbc] absolute top-[45px] right-4 pt-5 pb-5 pr-[18px] flex-col rounded-[15px] transition p-4 md:flex md:flex-row gap-[33px] text-[20px] font-[500] leading-[1.46] hidden"
+        >
+          <li><a href="./work.html">Works</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <a href="./index.html" class="text-[#FF6464]">Home</a>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
 
     <!-- main start -->
-    <main class="main text-[#21243D] flex flex-col items-center justify-center">
+    <main
+      class="main text-[#21243D] flex flex-col items-center justify-center md:pl-[20px] md:pr-[20px] pl-[10px] pr-[10px] md:w-[100%]"
+    >
       <section
-      class="md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-row-reverse gap-[110px] justify-center items-center max-w-[856px] w-[100%]"
+        class="container md:mt-[140px] mt-[33px] hero pt-[13px] md:flex-row-reverse pb-[59px] flex flex-col gap-[50] justify-between items-center max-w-[375px] w-[100%] md:w-[100%] md:max-w-[856px]"
       >
         <img
           class="w-[174.38px] h-[180px] mb-[34px] md:w-[243px] md:h-[243px]"
@@ -46,15 +47,15 @@
           alt=""
         />
         <div
-          class="flex flex-col items-center justify-center md:items-start md:justify-start"
+          class="flex flex-col items-center justify-center md:items-start md:justify-start md:w-[100%] md:max-w-[497px]"
         >
           <h1
-            class="mb-[21px] w-[312px] text-center text-[32px] font-[700] leading-[1.25] text-[#21243D] md:text-left"
+            class="mb-[21px] md:w-[100%] md:max-w-[440px] md:text-[44px] w-[312px] text-center text-[32px] font-[700] leading-[1.25] text-[#21243D] md:text-left"
           >
             Hi, I am John, Creative Technologist
           </h1>
           <p
-            class="mb-[27px] text-center text-[16px] leading-[1.46] text-[#21243D] md:text-left"
+            class="mb-[27px] max-w-[328px] w-[100%] md:max-w-[497px] md:w-[100%] text-center text-[16px] leading-[1.46] text-[#21243D] md:text-left"
           >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -71,9 +72,9 @@
 
       <!-- posts section start -->
       <section
-        class="md:pl-[148px] md:pr-[148px] w-[100%] px-[10px] pb-[38px] md:pb-[32px] flex flex-col items-center justify-center bg-[#EDF7FA]"
+        class=" md:w-[100%] md:max-w-[1412px] w-[100%] md:ml-[148px] md:mr-[148px] max-w-[375px] px-[10px] pb-[38px] md:pb-[32px] flex flex-col items-center justify-center bg-[#EDF7FA]"
       >
-        <div class="max-w-[856px] w-[100%]">
+        <div class="md:max-w-[856px] mad:w-[100%]  ">
           <div
             class="flex items-center justify-center md:justify-between w-[100%]"
           >
@@ -87,9 +88,9 @@
             >
           </div>
 
-          <div class="md:flex md:gap-5 flex-wrap justify-center w-[100%]">
+          <div class="md:flex md:gap-4 md:max-w-[856px] md:w-[100%]">
             <div
-              class="pt-[12px] pl-[19px] bg-white rounded-[4px] mb-[17px] md:max-w-[418px] md:w-[100%]"
+              class="pt-[12px] pl-[19px] pr-[19px] pb-[22px] bg-white rounded-[4px] mb-[17px] md:max-w-[418px] md:w-[100%]"
             >
               <h3
                 class="text-[22px] font-[700] leading-[1.36] mb-[12px] md:text-[26px]"
@@ -101,92 +102,131 @@
                 <p>|</p>
                 <p>Design, Pattern</p>
               </div>
-              <p class="leading-[1.46] w-[314px]">
+              <p class="leading-[1.46] max-w-[314px] w-[100%] md:max-w-[368px]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
+
+
+
             <div
-              class="pt-[12px] pl-[19px] bg-white rounded-[4px] mb-[17px] md:max-w-[418px] md:w-[100%]"
+            class="pt-[12px] pl-[19px] pr-[19px] pb-[22px] bg-white rounded-[4px] mb-[17px] md:max-w-[418px] md:w-[100%]"
+          >
+            <h3
+              class="text-[22px] font-[700] leading-[1.36] mb-[12px] md:text-[26px]"
             >
-              <h3
-                class="text-[22px] font-[700] leading-[1.36] mb-[12px] md:text-[26px]"
-              >
-                Making a design system from scratch
-              </h3>
-              <div class="flex gap-6 leading-[1.46] mb-[19px] md:text-[18px]">
-                <p>12 Feb 2020</p>
-                <p>|</p>
-                <p>Design, Pattern</p>
-              </div>
-              <p class="leading-[1.46] w-[314px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              Making a design system from scratch
+            </h3>
+            <div class="flex gap-6 leading-[1.46] mb-[19px] md:text-[18px]">
+              <p>12 Feb 2020</p>
+              <p>|</p>
+              <p>Design, Pattern</p>
             </div>
+            <p class="leading-[1.46] max-w-[314px] w-[100%] md:max-w-[368px]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
           </div>
         </div>
       </section>
       <!-- posts section end -->
 
       <!-- featured section start -->
-      <section class="md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center">
-        <div class="flex flex-col justify-center items-center md:justify-start md:items-start">
-          <h4 class="leading-[3.33] text-[18px] md:mb-[22px]">Featured works</h4>
+      <section
+        class="md:ml-[148px] md:mr-[148px] max-w-[375px] w-[100%] md:max-w-[856px] md:w-[100%] pt-[10px] pl-[10px] pr-[10px] pb-[59px] flex flex-col justify-end items-end"
+      >
+        <div
+          class="flex flex-col justify-center items-center md:justify-start md:items-start"
+        >
+          <h4 class="leading-[3.33] text-[18px] md:mb-[22px]">
+            Featured works
+          </h4>
 
-          <div class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px]">
-            <img class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]" src="./images/Rectangle 30.png" alt="" />
-            <div class=" md:max-w-[594px] md:w-[100%]">
-              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">Designing Dashboards</h3>
-            <div class="flex items-center gap-[22px] mb-[25px] ">
-              <p class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center">2020</p>
-              <p class="text-[#8695A4]">Dashboard</p>
+          <div
+            class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px]"
+          >
+            <img
+              class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]"
+              src="./images/Rectangle 30.png"
+              alt=""
+            />
+            <div class="md:max-w-[594px] md:w-[100%]">
+              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
+                Designing Dashboards
+              </h3>
+              <div class="flex items-center gap-[22px] mb-[25px]">
+                <p
+                  class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
+                >
+                  2020
+                </p>
+                <p class="text-[#8695A4]">Dashboard</p>
+              </div>
+              <p class="leading-[1.46] pb-[17px] w-[100%]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </div>
-            <p class="leading-[1.46] pb-[17px] w-[100%]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            </div>
-            
           </div>
-          <div class="mb-[31px] hidden md:items-center gap-[18px] border-b-[1px] md:flex">
-            <img class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]" src="./images/Rectangle 32.png" alt="" />
-            <div class=" md:max-w-[594px] md:w-[100%]">
-              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">Designing Dashboards</h3>
-            <div class="flex items-center gap-[22px] mb-[25px] ">
-              <p class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center">2020</p>
-              <p class="text-[#8695A4]">Dashboard</p>
+          <div
+            class="mb-[31px] hidden md:items-center gap-[18px] border-b-[1px] md:flex"
+          >
+            <img
+              class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]"
+              src="./images/Rectangle 32.png"
+              alt=""
+            />
+            <div class="md:max-w-[594px] md:w-[100%]">
+              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
+                Designing Dashboards
+              </h3>
+              <div class="flex items-center gap-[22px] mb-[25px]">
+                <p
+                  class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
+                >
+                  2020
+                </p>
+                <p class="text-[#8695A4]">Dashboard</p>
+              </div>
+              <p class="leading-[1.46] pb-[17px] w-[100%]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </div>
-            <p class="leading-[1.46] pb-[17px] w-[100%]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            </div>
-            
           </div>
-          <div class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px] hidden">
-            <img class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]" src="./images/Rectangle 34.png" alt="" />
-            <div class=" md:max-w-[594px] md:w-[100%]">
-              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">Designing Dashboards</h3>
-            <div class="flex items-center gap-[22px] mb-[25px] ">
-              <p class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center">2020</p>
-              <p class="text-[#8695A4]">Dashboard</p>
+          <div
+            class="mb-[31px] md:flex md:items-center gap-[18px] border-b-[1px] hidden"
+          >
+            <img
+              class="max-w-[339px] w-[100%] mb-[17px] md:max-w-[246px] md:w-[100%]"
+              src="./images/Rectangle 34.png"
+              alt=""
+            />
+            <div class="md:max-w-[594px] md:w-[100%]">
+              <h3 class="font-[700] leading-[1.25] text-[24px] mb-4">
+                Designing Dashboards
+              </h3>
+              <div class="flex items-center gap-[22px] mb-[25px]">
+                <p
+                  class="bg-[#142850] w-[62px] h-[25px] rounded-[16px] text-white text-center"
+                >
+                  2020
+                </p>
+                <p class="text-[#8695A4]">Dashboard</p>
+              </div>
+              <p class="leading-[1.46] pb-[17px] w-[100%]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </div>
-            <p class="leading-[1.46] pb-[17px] w-[100%]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            </div>
-            
           </div>
-
-
-          
         </div>
       </section>
       <!-- featured section end -->
@@ -194,16 +234,18 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer class="footer mt-[150px] md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center gap-[26px]">
-     <div class="flex items-center gap-[35px]">
-      <img src="./images/fb.png" alt="">
-      <img src="./images/insta.png" alt="">
-      <img src="./images/Group.png" alt="">
-      <img src="./images/Linkedin.png" alt="">
-     </div>
-     <p class="text-[14px] leading-[1.46]">
-      Copyright ©2020 All rights reserved 
-     </p>
+    <footer
+      class="footer mt-[150px] md:ml-[148px] md:mr-[148px] hero pt-[13px] pl-6 pr-6 pb-[59px] flex flex-col justify-center items-center gap-[26px]"
+    >
+      <div class="flex items-center gap-[35px]">
+        <img src="./images/fb.png" alt="" />
+        <img src="./images/insta.png" alt="" />
+        <img src="./images/Group.png" alt="" />
+        <img src="./images/Linkedin.png" alt="" />
+      </div>
+      <p class="text-[14px] leading-[1.46]">
+        Copyright ©2020 All rights reserved
+      </p>
     </footer>
     <!-- footer end -->
     <script src="script.js"></script>
